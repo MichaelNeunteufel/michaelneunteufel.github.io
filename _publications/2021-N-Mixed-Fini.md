@@ -1,0 +1,12 @@
+---
+title: "Mixed Finite Element Methods For Nonlinear Continuum Mechanics and Shells"
+authors: 'Neunteufel'
+collection: publications
+category: thesis
+permalink: /publication/2021-N-Mixed-Fini
+date: 2021-01-01
+venue: 'TU Wien'
+thesisurl: 'https://doi.org/10.34726/HSS.2021.85500'
+bibtexurl: 'http://michaelneunteufel.github.io/files/bibtex/Neu2021b.bib'
+---
+In this work mixed formulations for nonlinear problems in continuum mechanics and shells are presented and discussed. While standard methods in continuum mechanics, where the displacement field is used as unknown, often suffer from non-robust formulations, a combination of function spaces with lower regularity assumptions may circumvent so-called &apos;&apos;locking&apos;&apos; phenomena. Mixed two-field methods, where the stress tensor is considered as additional unknown, are already used quite often in linear elasticity. These approaches, however, can mostly not directly be generalized to nonlinear materials, as they are in general not invertable. Additionally, geometric nonlinearities require multiplication of derivatives, which are not well-defined for spaces with low regularities. With this motivation so-called three-field formulations are proposed, where a lifting of distributional derivatives to square-integrable functions is accomplished. This approach is further extended to (nearly) incompressible materials. For (nonlinear) Koiter shells a twice weakly differentiable displacement field is required, as a fourth-order differential operator is involved. The construction of such globally differentiable finite elements has turned out to be extremely challenging. Instead, we introduce an additional stress field to enable displacements to be in a first order Sobolev space and thus more simple finite elements are available. We show that this method simplifies to the Hellan-Herrmann-Johnson method in the small strain regime for plates. Further, extensions to nonlinear Naghdi shells are presented. For thin shell structures so-called membrane locking occurs for curved elements. We present an interpolation procedure based on the less common Regge finite elements to prevent this locking behavior for triangulations. This approach can be accomplished with finite elements for the topological dual space as mixed variational problem. We discuss connections between the presented methods and existing elements.
