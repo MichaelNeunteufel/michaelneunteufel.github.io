@@ -83,6 +83,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  reports:
+    title: 'Reports'
   proceedings:
     title: 'Proceedings'
   thesis:

@@ -57,8 +57,11 @@ for i, bib_id in enumerate(bibdata.entries):
         abstract = None
     b = CleanUpEntry(b)
     bibdata.entries[bib_id].fields=b
-    print(bibdata.entries[bib_id].type)
+    #print(bibdata.entries[bib_id].type)
     #print(b)
+
+
+    
     if bibdata.entries[bib_id].type == "article":
         category = "manuscripts"
         if "journal" in b.keys():
@@ -77,7 +80,20 @@ for i, bib_id in enumerate(bibdata.entries):
             venue = b["school"]
         else:
             raise ValueError("School not found in thesis entry.")
-        
+    elif bibdata.entries[bib_id].type == "conference":
+        category = "reports"
+        if "booktitle" in b.keys():
+            venue = b["booktitle"]
+        else:
+            raise ValueError("Booktitle not found in conference entry.")
+    elif bibdata.entries[bib_id].type == "inproceedings":
+        category = "proceedings"
+        if "booktitle" in b.keys():
+            venue = b["booktitle"]
+        else:
+            raise ValueError("Booktitle not found in inproceedings entry.")
+    else:
+        raise ValueError("Entry type " + bibdata.entries[bib_id].type + " not recognized. Please check the bibtex file.")
     if "month" in b.keys(): 
         if(len(b["month"])<3):
             pub_month = "0"+b["month"]
@@ -94,7 +110,7 @@ for i, bib_id in enumerate(bibdata.entries):
 
     #strip out {} as needed (some bibtex entries that maintain formatting)
     clean_title = b["title"].replace("{", "").replace("}","").replace("\\","").replace(" ","-")  
-    print(clean_title)
+    #print(clean_title)
     md_filename = str(b["year"])+"-"
     authors = ""
     citation = ""
@@ -117,12 +133,13 @@ for i, bib_id in enumerate(bibdata.entries):
     md_filename = (md_filename + ".md").replace("--","-")
 
     citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
-    print(citation)
-    print(md_filename)
+    #print(citation)
+    #print(md_filename)
 
     title = b["title"].replace("{\\textasciicircum}", "^").replace("{\\textbackslash}textrm", "").replace("{\\textbackslash}mathrm", "").replace("{\\textbackslash}times", "$$x$$").replace("\\{\\vphantom\\}","").replace("\\vphantom","").replace("\\$","$$").replace("\\{", "{").replace("\\}", "}")
+    #print(title)
     ## YAML variables
-    md = "---\ntitle: \""   + html_escape(title.replace("{{", "").replace("}}","").replace("\\","")) + '"'
+    md = "---\ntitle: \""   + html_escape(title.replace("{{", "").replace("}}","").replace("\\","")).replace("v{s}","&scaron;") + '"'
     md += """\nauthors: """ +  "'" + authors + "'"
     
     md += """\ncollection: """ +  "publications"
@@ -147,6 +164,10 @@ for i, bib_id in enumerate(bibdata.entries):
         pre = "arxivurl"
     elif category == "thesis":
         pre = "thesisurl"
+    elif category == "reports":
+        pre = "reporturl"
+    elif category == "proceedings":
+        pre = "proceedingurl"
     else:
         raise ValueError("Category " + category + "not recognized.")
     
@@ -161,11 +182,14 @@ for i, bib_id in enumerate(bibdata.entries):
 
     md += "\nbibtexurl: '" + "http://michaelneunteufel.github.io/files/bibtex/" + bib_id + ".bib" + "'"
 
+    if category == "manuscripts" and "arxivurl" in b.keys():
+        if len(str(b["arxivurl"])) > 5:
+            md += "\narxivurl: '" + b["arxivurl"] + "'"
     md += "\n---\n"
     if abstract:
         abstract = abstract.replace("\\$", "$$").replace("{\\textbackslash}", "\\").replace("\\_", "_").replace("\\{", "{").replace("\\}", "}").replace("{\\textasciicircum}", "^").replace(" .", ".")
         abstract = html_escape(abstract)
-        abstract = abstract.replace("{\\&apos;e}","&eacute;").replace("{\\&quot;o}", "&ouml;").replace("\\&quot;o", "&ouml;").replace("\\&amp;", "&amp;")
+        abstract = abstract.replace("{\\&apos;e}","&eacute;").replace("{\\&quot;o}", "&ouml;").replace("\\&quot;o", "&ouml;").replace("\\&amp;", "&amp;").replace("\\v{s}","&scaron;")
         md += abstract
     # md += "\ncitation: '" + html_escape(citation) + "'"
 
@@ -180,7 +204,7 @@ for i, bib_id in enumerate(bibdata.entries):
     #    md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
     # else:
     #     md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
-    print(md)
+    #print(md)
     with open("../_publications/" + md_filename, 'w', encoding="utf-8") as f:
         f.write(md)
     # if i > 30:

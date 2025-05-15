@@ -11,7 +11,7 @@ I am a postdoctoral researcher at [Portland State University](https://www.pdx.ed
 
 My research is settled in numerical analysis of (non-standard) finite element methods. My interests include the construction, analysis, and application of finite elements in the fields of continuum mechanics (especially shells), fluid-structure interaction, shape optimization, (discrete) differential geometry, and numerical relativity.
 
-I have been a developer of the open-source finite element library [NGSolve](http://www.ngsolve.org) for 8 years, where I implement finite elements, differential geometry support, etc.
+I have been a developer of the open-source finite element library [NGSolve](http://www.ngsolve.org) for 8 years, where I implement finite elements, differential geometry support, etc. In my add-on package [NGSDiffGeo](https://github.com/MichaelNeunteufel/NGSDiffGeo) I add differential geometry support for Riemannian manifolds.
 
 I am a member of the editorial board of [Computers & Mathematics with Applications](https://www.sciencedirect.com/journal/computers-and-mathematics-with-applications).
 

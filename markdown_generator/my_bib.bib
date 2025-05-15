@@ -21,9 +21,10 @@
   issn = {0025-5718, 1088-6842},
   doi = {10.1090/mcom/4038},
   urldate = {2024-12-30},
-  abstract = {Advancing research. Creating connections.},
+  abstract = {We analyze finite element discretizations of scalar curvature in \$ N \geq 2 \$ dimension. Our analysis focuses on piecewise polynomial interpolants of a smooth Riemannian metric \$g\$ on a simplicial triangulation of a polyhedral domain \$\Omega \subset \mathbb{R}{\textasciicircum}N \$ having maximum element diameter \$h\$. We show that if such an interpolant \$g\_h\$ has polynomial degree \$ r\geq 0\$ and possesses single-valued tangential-tangential components on codimension-1 simplices, then it admits a natural notion of (densitized) scalar curvature that converges in the \$H{\textasciicircum}{-2}(\Omega)\$-norm to the (densitized) scalar curvature of \$g\$ at a rate of \$O(h{\textasciicircum}{r+1})\$  as \$h\to 0\$, provided that either \$N=2\$ or \$r\geq 1\$. As a special case, our result implies the convergence in \$H{\textasciicircum}{-2}(\Omega)\$ of the widely used ``angle defect'' approximation of Gaussian curvature on two-dimensional triangulations, without stringent assumptions on the interpolated metric \$g\_h\$. We present numerical experiments that indicate that our analytical estimates are sharp.},
   langid = {english},
   keywords = {curvature,differential geometry,Regge},
+  arxivurl = {https://arxiv.org/abs/2301.02159},
 }
 
 @article{gawlikFiniteElementApproximation2025,
@@ -38,6 +39,7 @@
   urldate = {2025-03-26},
   abstract = {We construct and analyse finite element approximations of the Einstein tensor in dimension \$N {\textbackslash}ge 3\$. We focus on the setting where a smooth Riemannian metric tensor \$g\$ on a polyhedral domain \${\textbackslash}varOmega {\textbackslash}subset {\textbackslash}mathbb\{R\}{\textasciicircum}\{N\}\$ has been approximated by a piecewise polynomial metric \$g\_\{h\}\$ on a simplicial triangulation \${\textbackslash}mathcal\{T\}\$ of \${\textbackslash}varOmega \$ having maximum element diameter \$h\$. We assume that \$g\_\{h\}\$ possesses single-valued tangential--tangential components on every codimension-\$1\$ simplex in \${\textbackslash}mathcal\{T\}\$. Such a metric is not classically differentiable in general, but it turns out that one can still attribute meaning to its Einstein curvature in a distributional sense. We study the convergence of the distributional Einstein curvature of \$g\_\{h\}\$ to the Einstein curvature of \$g\$ under refinement of the triangulation. We show that in the \$H{\textasciicircum}\{-2\}({\textbackslash}varOmega )\$-norm this convergence takes place at a rate of \$O(h{\textasciicircum}\{r+1\})\$ when \$g\_\{h\}\$ is an optimal-order interpolant of \$g\$ that is piecewise polynomial of degree \$r {\textbackslash}ge 1\$. We provide numerical evidence to support this claim. In the process of proving our convergence results we derive a few formulas for the evolution of certain geometric quantities under deformations of the metric.},
   keywords = {curvature,differential geometry,Regge,relativity},
+  arxivurl = {https://arxiv.org/abs/2310.18802},
 }
 
 @article{GNSW2023,
@@ -51,6 +53,7 @@
   doi = {10.5802/smai-jcm.98},
   urldate = {2023-09-12},
   keywords = {curvature,DDG,differential geometry,inc,Regge},
+  abstract = {The metric tensor of a Riemannian manifold can be approximated using Regge finite elements and such approximations can be used to compute approximations to the Gauss curvature and the Levi-Civita connection of the manifold. It is shown that certain Regge approximations yield curvature and connection approximations that converge at a higher rate than previously known. The analysis is based on covariant (distributional) curl and incompatibility operators which can be applied to piecewise smooth matrix fields whose tangential-tangential component is continuous across element interfaces. Using the properties of the canonical interpolant of the Regge space, we obtain superconvergence of approximations of these covariant operators. Numerical experiments further illustrate the results from the error analysis.},
 }
 
 @misc{gopalakrishnanGeneralizingRiemannCurvature2024,
@@ -95,7 +98,7 @@
   issn = {1615-147X, 1615-1488},
   doi = {10.1007/s00158-020-02742-w},
   urldate = {2022-09-11},
-  abstract = {Abstract             In this paper, we present a framework for automated shape differentiation in the finite element software . Our approach combines the mathematical Lagrangian approach for differentiating PDE-constrained shape functions with the automated differentiation capabilities of . The user can decide which degree of automatisation is required, thus allowing for either a more custom-like or black-box--like behaviour of the software. We discuss the automatic generation of first- and second-order shape derivatives for unconstrained model problems as well as for more realistic problems that are constrained by different types of partial differential equations. We consider linear as well as nonlinear problems and also problems which are posed on surfaces. In numerical experiments, we verify the accuracy of the computed derivatives via a Taylor test. Finally, we present first- and second-order shape optimisation algorithms and illustrate them for several numerical optimisation examples ranging from nonlinear elasticity to Maxwell's equations.},
+  abstract = {In this paper, we present a framework for automated shape differentiation in the finite element software . Our approach combines the mathematical Lagrangian approach for differentiating PDE-constrained shape functions with the automated differentiation capabilities of . The user can decide which degree of automatisation is required, thus allowing for either a more custom-like or black-box--like behaviour of the software. We discuss the automatic generation of first- and second-order shape derivatives for unconstrained model problems as well as for more realistic problems that are constrained by different types of partial differential equations. We consider linear as well as nonlinear problems and also problems which are posed on surfaces. In numerical experiments, we verify the accuracy of the computed derivatives via a Taylor test. Finally, we present first- and second-order shape optimisation algorithms and illustrate them for several numerical optimisation examples ranging from nonlinear elasticity to Maxwell's equations.},
   langid = {english},
   keywords = {NETGEN/NGSolve,shape optimization},
 }
@@ -114,6 +117,7 @@
   abstract = {We address a three-dimensional model capable of describing coupled damage and plastic effects in solids at finite strains. Formulated within the variational setting of generalized standard materials, the constitutive model results from the balance of conservative and dissipative forces. Material response is rate-independent and associative and damage evolution is unidirectional. We assess the model features and performance on both uniaxial and non-proportional biaxial tests. The constitutive model is then complemented with the quasistatic equilibrium system and initial and boundary conditions. We produce numerical simulations with the help of the multiphysics finite element software NETGEN/NGSolve. We show the flexibility of the implementation and run simulations for various 2D and 3D settings under different choices of boundary conditions and possibly in presence of pre-damaged regions.},
   langid = {english},
   keywords = {damage,elasticity,plasticity},
+  arxivurl = {https://arxiv.org/abs/2005.04965},
 }
 
 @phdthesis{Neu2021b,
@@ -158,6 +162,7 @@
   urldate = {2024-10-04},
   abstract = {In this paper we extend the recently introduced mixed Hellan--Herrmann--Johnson (HHJ) method for nonlinear Koiter shells to nonlinear Naghdi shells by means of a hierarchical approach. The additional shearing degrees of freedom are discretized by H(curl)-conforming N{\'e}d{\'e}lec finite elements entailing a shear locking free method. By linearizing the models we obtain in the small strain regime linear Kirchhoff--Love and Reissner--Mindlin shell formulations, which reduce for plates to the originally proposed HHJ and TDNNS methods for Kirchhoff--Love and Reissner--Mindlin plates, respectively. By interpolating the membrane strains into the so-called Regge finite element space we obtain locking-free arbitrary order shell methods. Additionally, the methods can be directly applied to structures with kinks and branched shells. Several numerical examples and experiments are performed validating the excellent performance of the proposed shell elements.},
   keywords = {elasticity,HHJ,locking,Regge,shells,TDNNS},
+  arxivurl = {https://arxiv.org/abs/2304.13806},
 }
 
 @article{NPS2021,
@@ -174,6 +179,7 @@
   abstract = {In this paper, we extend the tangential-displacement normal--normal-stress continuous (TDNNS) method from Pechstein and Sch{\"o}berl (2011) to nonlinear elasticity. By means of the Hu--Washizu principle, the distributional derivatives of the displacement vector are lifted to a regular strain tensor. We introduce three different methods, where either the deformation gradient, the Cauchy--Green strain tensor, or both of them are used as independent variables. Within the linear sub-problems, all stress and strain variables can be locally eliminated leading to an equation system in displacement variables, only. The good performance and accuracy of the presented methods are demonstrated by means of several numerical examples.},
   langid = {english},
   keywords = {elasticity,TDNNS},
+  arxivurl = {https://arxiv.org/abs/2009.03928},
 }
 
 @article{NS2019,
@@ -189,6 +195,8 @@
   urldate = {2022-08-18},
   langid = {english},
   keywords = {elasticity,HHJ,shells},
+  abstract = {In this paper we derive a new finite element method for nonlinear shells. The Hellan–Herrmann–Johnson (HHJ) method is a mixed finite element method for fourth order Kirchhoff plates. It uses convenient Lagrangian finite elements for the vertical deflection, and introduces sophisticated finite elements for the moment tensor. In this work we present a generalization of this method to nonlinear shells, where we allow finite strains and large rotations. The geometric interpretation of degrees of freedom allows a straight forward discretization of structures with kinks. The performance of the proposed elements is demonstrated by means of several established benchmark examples.},
+  arxivurl = {https://arxiv.org/abs/1904.04714},
 }
 
 @article{NS2021,
@@ -204,6 +212,8 @@
   urldate = {2022-08-21},
   langid = {english},
   keywords = {elasticity,locking,shells},
+  abstract = {In this paper we present a method to overcome membrane locking of thin shells. An interpolation operator into the so-called Regge finite element space is inserted in the membrane energy term to weaken the implicitly given kernel constraints. The number of constraints is decreased on triangular meshes compared to reduced integration techniques, in the lowest order case asymptotically by a factor two. A tying point procedure to accomplish the interpolation is presented revealing a strong connection to MITC shell elements. Provided the interpolant, this approach can be incorporated easily into existing shell elements. The performance of the proposed method is demonstrated by means of several benchmark examples.},
+  arxivurl = {https://arxiv.org/abs/1907.06232},
 }
 
 @article{NS2021a,
@@ -218,6 +228,8 @@
   doi = {10.1016/j.compstruc.2020.106402},
   urldate = {2022-08-21},
   langid = {english},
+  abstract = {In this paper a novel application of the (high-order) H(div)-conforming Hybrid Discontinuous Galerkin finite element method for monolithic fluid-structure interaction (FSI) is presented. The Arbitrary Lagrangian Eulerian (ALE) description is derived for H(div)-conforming finite elements including the Piola transformation, yielding exact divergence free fluid velocity solutions. The arising method is demonstrated by means of the benchmark problems proposed by Turek and Hron (2006). With hp-refinement strategies singularities and boundary layers are overcome leading to optimal spatial convergence rates.},
+  arxivurl = {https://arxiv.org/abs/2005.06360},
 }
 
 @article{NSS2023,
@@ -234,22 +246,23 @@
   abstract = {In this paper we propose a novel numerical scheme for the Canham-Helfrich-Evans bending energy based on a three-field lifting procedure of the distributional shape operator to an auxiliary mean curvature field. Together with its energetic conjugate scalar stress field as Lagrange multiplier the resulting fourth order problem is circumvented and reduced to a mixed saddle point problem involving only second order differential operators. Further, we derive its analytical first variation (also called first shape derivative), which is valid for arbitrary polynomial order, and discuss how the arising shape derivatives can be computed automatically in the finite element software NGSolve. We finish the paper with several numerical simulations showing the pertinence of the proposed scheme and method.},
   langid = {english},
   keywords = {cellmembrane,curvature,DDG,HHJ,shape optimization},
+  arxivurl = {https://arxiv.org/abs/2107.13794},
 }
 
-@misc{pechsteinDirectCouplingContinuum2025,
+@article{pechsteinDirectCouplingContinuum2025,
   title = {Direct Coupling of Continuum and Shell Elements in Large Deformation Problems},
   author = {Pechstein, Astrid and Neunteufel, Michael},
   year = {2025},
-  month = jan,
-  number = {arXiv:2501.05251},
-  eprint = {2501.05251},
-  primaryclass = {math},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2501.05251},
-  urldate = {2025-01-27},
-  abstract = {In many applications, thin shell-like structures are integrated within or attached to volumetric bodies. This includes reinforcements placed in soft matrix material in lightweight structure design, or hollow structures that are partially or completely filled. Finite element simulations of such setups are highly challenging. A brute force discretization of structural as well as volumetric parts using well-shaped three-dimensional elements may be accurate, but leads to problems of enormous computational complexity even for simple models. One desired alternative is the use of shell elements for thin-walled parts, as such a discretization greatly alleviates size restrictions on the underlying finite element mesh. However, the coupling of different formulations within a single framework is often not straightforward and may lead to locking if not done carefully. Neunteufel and Sch{\textbackslash}"oberl proposed a mixed shell element where, apart from displacements of the center surface, bending moments are used as independent unknowns. These elements were not only shown to be locking free and highly accurate in large-deformation regime, but also do not require differentiability of the shell surface. They can directly be coupled to classical volume elements of arbitrary order by sharing displacement degrees of freedom at the center surface, thus achieving the desired coupled discretization. As the elements can be used on unstructured meshes, adaptive mesh refinement based on local stress and bending moments can be used. We present computational results that confirm exceptional accuracy for problems where thin-walled structures are embedded as reinforcements within soft matrix material.},
-  archiveprefix = {arXiv},
+  month = jul,
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume = {442},
+  pages = {118002},
+  issn = {0045-7825},
+  doi = {10.1016/j.cma.2025.118002},
+  urldate = {2025-04-26},
+  abstract = {In many applications, thin shell-like structures are integrated within or attached to volumetric bodies. This includes reinforcements placed in soft matrix material in lightweight structure design, or hollow structures that are partially or completely filled. Finite element simulations of such setups are highly challenging. A brute force discretization of structural as well as volumetric parts using well-shaped three-dimensional elements may be accurate, but leads to problems of enormous computational complexity even for simple models. One desired alternative is the use of shell elements for thin-walled parts, as such a discretization greatly alleviates size restrictions on the underlying finite element mesh. However, the coupling of different formulations within a single framework is often not straightforward and may lead to locking if not done carefully. Neunteufel and Sch{\"o}berl proposed a mixed shell element where, apart from displacements of the center surface, bending moments are used as independent unknowns. These elements were not only shown to be locking free and highly accurate in large-deformation regime, but also do not require differentiability of the shell surface and can handle kinked and branched shell structures. They can directly be coupled to classical volume elements of arbitrary order by sharing displacement degrees of freedom at the center surface, thus achieving the desired coupled discretization. As the elements can be used on unstructured meshes, adaptive mesh refinement based on local stress and bending moments can be used. We present computational results that confirm exceptional accuracy for problems where thin-walled structures are embedded as reinforcements within soft matrix material.},
   keywords = {elasticity,HHJ,Regge,shells},
+  arxivurl = {https://arxiv.org/abs/2501.05251},
 }
 
 @article{RNM2023,
@@ -263,6 +276,7 @@
   doi = {10.1093/jrsssc/qlad057},
   urldate = {2023-07-04},
   abstract = {This study proposes the novel concept of hierarchical confusion matrix, opening the door for popular confusion-matrix-based (flat) evaluation measures from binary classification problems, while considering the peculiarities of hierarchical classification problems. The concept is developed to a generalised form and proven its applicability to all types of hierarchical classification problems including directed acyclic graphs, multi-path labelling, and non-mandatory leaf-node prediction. Finally, measures based on the novel confusion matrix are used for three real-world hierarchical classification applications and compared to established evaluation measures. The results, the conformity with important attributes of hierarchical classification schemes and its broad applicability justify its recommendation.},
+  arxivurl = {https://arxiv.org/abs/2306.09461},
 }
 
 @article{skyNoveldevCurlconformingElements2025,
@@ -277,6 +291,7 @@
   abstract = {In this work we present a consistent reduction of the relaxed micromorphic model to its corresponding two-dimensional planar model, such that its capacity to capture discontinuous dilatation fields is preserved. As a direct consequence of our approach, new conforming finite elements for \$\{H\}{\textasciicircum}\{{\textbackslash}textrm\{dev\}\}({\textbackslash}textrm\{Curl\}\{,A\})\$ become necessary. We present two novel \$\{H\}{\textasciicircum}\{{\textbackslash}textrm\{dev\}\}({\textbackslash}textrm\{Curl\}\{,A\})\$-conforming finite element spaces, of which one is a macro element based on Clough--Tocher splits, as well as primal and mixed variational formulations of the planar relaxed micromorphic model. Finally, we demonstrate the effectiveness of our approach with two numerical examples.},
   langid = {english},
   keywords = {Cosserat,elasticity},
+  arxivurl = {https://arxiv.org/abs/2405.14849},
 }
 
 @article{SNHZ2023,
@@ -293,6 +308,7 @@
   abstract = {In this work we develop new finite element discretisations of the shear-deformable Reissner--Mindlin plate problem based on the Hellinger--Reissner principle of symmetric stresses. Specifically, we use conforming Hu-Zhang elements to discretise the bending moments in the space of symmetric square integrable fields with a square integrable divergence \$M \in \mathrm{HZ} \subset H\_{\mathrm{sym}}(\mathrm{Div})\$. The latter results in highly accurate approximations of the bending moments M and in the rotation field being in the Lebesgue space \$\phi\in [L{\textasciicircum}2]{\textasciicircum}2\$, such that the Kirchhoff--Love constraint can be satisfied for \$t\rightarrow0\$. In order to preserve optimal convergence rates across all variables for the case \$t\rightarrow0\$, we present an extension of the formulation using Raviart--Thomas elements for the shear stress \$q\in \mathrm{RT} \subset H(\mathrm{div})\$. We prove existence and uniqueness in the continuous setting and rely on exact complexes for inheritance of well-posedness in the discrete setting. This work introduces an efficient construction of the Hu-Zhang base functions on the reference element via the polytopal template methodology and Legendre polynomials, making it applicable to hp-FEM. The base functions on the reference element are then mapped to the physical element using novel polytopal transformations, which are suitable also for curved geometries. The robustness of the formulations and the construction of the Hu-Zhang element are tested for shear-locking, curved geometries and an L-shaped domain with a singularity in the bending moments M. Further, we compare the performance of the novel formulations with the primal-, MITC- and recently introduced TDNNS methods.},
   langid = {english},
   keywords = {elasticity,elements,locking,plates},
+  arxivurl = {https://arxiv.org/abs/2305.17249},
 }
 
 @misc{SNHZ2024,
@@ -311,20 +327,20 @@
   keywords = {elements},
 }
 
-@misc{SNLZN2023,
-  title = {Novel \${{H}}({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{\vphantom\}{{Curl}}\vphantom\{\})\$-Conforming Finite Elements for the Relaxed Micromorphic Sequence},
-  author = {Sky, Adam and Neunteufel, Michael and Lewintan, Peter and Zilian, Andreas and Neff, Patrizio},
-  year = {2023},
-  month = aug,
-  number = {arXiv:2308.07750},
-  eprint = {2308.07750},
-  primaryclass = {cs, math},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2308.07750},
-  urldate = {2023-08-21},
-  abstract = {In this work we construct novel \$H({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{Curl\})\$-conforming finite elements for the recently introduced relaxed micromorphic sequence, which can be considered as the completion of the \${\textbackslash}mathrm\{div\} {\textbackslash}mathrm\{Div\}\$-sequence with respect to the \$H({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{Curl\})\$-space. The elements respect \$H({\textbackslash}mathrm\{Curl\})\$-regularity and their lowest order versions converge optimally for \$[H({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{Curl\}) {\textbackslash}setminus H({\textbackslash}mathrm\{Curl\})]\$-fields. This work introduces a detailed construction, proofs of linear independence and conformity of the basis, and numerical examples. Further, we demonstrate an application to the computation of metamaterials with the relaxed micromorphic model.},
-  archiveprefix = {arXiv},
-  keywords = {elements,high-order},
+
+@article{SKY2024116494,
+title = {Novel H(symCurl)-conforming finite elements for the relaxed micromorphic sequence},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {418},
+pages = {116494},
+year = {2024},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2023.116494},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782523006187},
+author = {Adam Sky and Michael Neunteufel and Peter Lewintan and Andreas Zilian and Patrizio Neff},
+keywords = {(sym Curl) finite elements, Relaxed micromorphic sequence, divDiv sequence, Polytopal templates, Relaxed micromorphic model, Metamaterials},
+abstract = {In this work we construct novel \$H({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{Curl\})\$-conforming finite elements for the recently introduced relaxed micromorphic sequence, which can be considered as the completion of the \${\textbackslash}mathrm\{div\} {\textbackslash}mathrm\{Div\}\$-sequence with respect to the \$H({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{Curl\})\$-space. The elements respect \$H({\textbackslash}mathrm\{Curl\})\$-regularity and their lowest order versions converge optimally for \$[H({\textbackslash}mathrm\{sym\} {\textbackslash}mathrm\{Curl\}) {\textbackslash}setminus H({\textbackslash}mathrm\{Curl\})]\$-fields. This work introduces a detailed construction, proofs of linear independence and conformity of the basis, and numerical examples. Further, we demonstrate an application to the computation of metamaterials with the relaxed micromorphic model.},
+arxivurl = {https://arxiv.org/abs/2308.07750},
 }
 
 @article{SNMSN2021,
@@ -342,6 +358,7 @@
   abstract = {One approach for the simulation of metamaterials is to extend an associated continuum theory concerning its kinematic equations, and the relaxed micromorphic continuum represents such a model. It incorporates the Curl of the nonsymmetric microdistortion in the free energy function. This suggests the existence of solutions not belonging to \$H{\textasciicircum}1\$, such that standard nodal \$H{\textasciicircum}1\$-finite elements yield unsatisfactory convergence rates and might be incapable of finding the exact solution. Our approach is to use base functions stemming from both Hilbert spaces \$H{\textasciicircum}1\$ and \$H ({\textbackslash}mathrm\{curl\})\$, demonstrating the central role of such combinations for this class of problems. For simplicity, a reduced two-dimensional relaxed micromorphic continuum describing antiplane shear is introduced, preserving the main computational traits of the three-dimensional version. This model is then used for the formulation and a multi step investigation of a viable finite element solution, encompassing examinations of existence and uniqueness of both standard and mixed formulations and their respective convergence rates.},
   langid = {english},
   keywords = {elasticity,high-order},
+  arxivurl = {https://arxiv.org/abs/2009.13397},
 }
 
 @article{SNMSN2022,
@@ -358,6 +375,7 @@
   abstract = {The classical Cauchy continuum theory is suitable to model highly homogeneous materials. However, many materials, such as porous media or metamaterials, exhibit a pronounced microstructure. As a result, the classical continuum theory cannot capture their mechanical behaviour without fully resolving the underlying microstructure. In terms of finite element computations, this can be done by modelling the entire body, including every interior cell. The relaxed micromorphic continuum offers an alternative method by instead enriching the kinematics of the mathematical model. The theory introduces a microdistortion field, encompassing nine extra degrees of freedom for each material point. The corresponding elastic energy functional contains the gradient of the displacement field, the microdistortion field and its Curl (the micro-dislocation). Therefore, the natural spaces of the fields are \$[H{\textasciicircum}1]{\textasciicircum}3\$ for the displacement and \$[H({\textbackslash}mathrm\{curl\})]{\textasciicircum}3\$ for the microdistortion, leading to unusual finite element formulations. In this work we describe the construction of appropriate finite elements using N{\'e}d{\'e}lec and Raviart--Thomas subspaces, encompassing solutions to the orientation problem and the discrete consistent coupling condition. Further, we explore the numerical behaviour of the relaxed micromorphic model for both a primal and a mixed formulation. The focus of our benchmarks lies in the influence of the characteristic length \$L\_c\$ and the correlation to the classical Cauchy continuum theory.},
   langid = {english},
   keywords = {Cosserat,elasticity},
+  arxivurl = {https://arxiv.org/abs/2202.08715},
 }
 
 @article{ZNR2023,
@@ -374,4 +392,85 @@
   abstract = {We investigate the possibility to determine the divergence-free displacement u independently from the pressure reaction p for a class of boundary-value problems in incompressible linear elasticity. If not possible, we investigate if it is possible to determine it pressure robustly, i.e. pollution free from the pressure reaction. For convex domains there is but one variational boundary value problem among the investigated that allows the independent determination. It is the one with essential no-penetration conditions combined with homogeneous tangential traction conditions. Further, for the investigated cases, the weakly divergence-free displacement can be computed pressure robustly provided the total body force is decomposed into its direct sum of divergence- and rotation-free components using the Helmholtz decomposition. The elasticity problem is solved using these components as separate right-hand sides. The total solution is obtained using the superposition principle. We employ a (u,p) higher-order finite element formulation with discontinuous pressure elements. It is inf--sup stable for polynomial degree \$p\geq2\$ but not pressure robust by itself. We propose a three step procedure to solve the elasticity problem which includes by the Helmholtz decomposition of the total body force. The extra cost for the three-step procedure is essentially the cost for the Helmholtz decomposition of the assembled total body force, and the small cost of solving the elasticity problem with one extra right-hand side. The results are corroborated by theoretical derivations as well as numerical results.},
   langid = {english},
   keywords = {elasticity,pressure robust},
+  arxivurl = {https://arxiv.org/abs/2207.02615},
+}
+
+
+@phdthesis{Neu2016,
+  title = {TRNNM - Gemischte Finite Elemente für nichtlineare Schalenmodelle},
+  author = {Neunteufel, Michael},
+  year = {2016},
+  month = {oct},
+  address = {Vienna},
+  collaborator = {Sch{\"o}berl, Joachim},
+  langid = {german},
+  school = {TU Wien},
+}
+
+@misc{bartels2025babuvskasparadoxnonlinearbending,
+      title={Babu\v{s}ka's paradox in a nonlinear bending model}, 
+      author={S{\"o}ren Bartels and Andrea Bonito and Peter Hornung and Michael Neunteufel},
+      year={2025},
+      eprint={2503.17190},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2503.17190}, 
+      abstract = {The Babu\v{s}ka or plate paradox concerns the failure of convergence when a domain with curved boundary is approximated by polygonal domains in linear bending problems with simple support boundary conditions. It can be explained via a boundary integral representation of the total Gaussian curvature that is part of the Kirchhoff--Love bending energy. It is shown that the paradox also occurs for a nonlinear bending-folding model which enforces vanishing Gaussian curvature. A simple remedy that is compatible with simplicial finite element methods to avoid wrong convergence is devised.}
+}
+
+@misc{fu2025fourfieldmixedformulationincompressible,
+      title={A four-field mixed formulation for incompressible finite elasticity}, 
+      author={Guosheng Fu and Michael Neunteufel and Joachim Sch{\"o}berl and Adam Zdunek},
+      year={2025},
+      eprint={2503.00989},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2503.00989}, 
+      abstract={In this work, we generalize the mass-conserving mixed stress (MCS) finite element method for Stokes equations [Gopalakrishnan J., Lederer P., and Sch{\"o}berl J., A mass conserving mixed stress formulation for the Stokes equations, IMA Journal of Numerical Analysis 40(3), 1838-1874 (2019)], involving normal velocity and tangential-normal stress continuous fields, to incompressible finite elasticity. By means of the three-field Hu-Washizu principle, introducing the displacement gradient and 1st Piola-Kirchhoff stress tensor as additional fields, we circumvent the inversion of the constitutive law. We lift the arising distributional derivatives of the displacement gradient to a regular auxiliary displacement gradient field. Static condensation can be applied at the element level, providing a global pure displacement problem to be solved. We present a stabilization motivated by Hybrid Discontinuous Galerkin methods. A solving algorithm is discussed, which asserts the solvability of the arising linearized subproblems for problems with physically positive eigenvalues. The excellent performance of the proposed method is corroborated by several numerical experiments.}
+}
+
+@inproceedings{Sky2024schubversteifungsfreie,
+	AUTHOR = {Sky, Adam and Neunteufel, Michael and Hale, Jack and Zilian, Andreas},
+	TITLE = {Eine schubversteifungsfreie Formulierung der Reissner Mindlin Platte anhand Hu-Zhang Elemente},
+	LANGUAGE = {German},
+	YEAR = {2024},
+  month = {mar},
+	PUBLISHER = {Institut für Baustatik, Technische Universität Hamburg},
+	BOOKTITLE = {Baustatik – Baupraxis 15},
+	LOCATION = {Hamburg, Germany},
+	ABSTRACT = {Eine neuartige Diskretisierung der Reissner-Mindlin-Plattengleichung, die für den symmetrischen Momententensor Hu-Zhang-Elemente
+		und für die Schubspannungen Raviart-Thomas-Elemente einsetzt, wird vorgestellt. Die Konstruktion des Hu-Zhang-Elements und entsprechende Transformationsvorschriften werden diskutiert. Existenz und Eindeutigkeit werden bewiesen und die Robustheit anhand von Beispielen demonstriert.}
+}
+
+
+@inproceedings{danczul2022modeling,
+  title={Modeling airflow-driven water droplet removal from a flat surface},
+  author={Danczul, Tobias and Hetebrij, Wouter and Khalighi, Faeze and Kogler, Lukas and Lahaye, Domenico and Luckins, Ellen and Munters, Wim and Neunteufel, Michael and Pammer, Gudmund and Vuik, Kees},
+  booktitle={SWI 2020: 157th European Study Group with Industry},
+  pages={177--214},
+  year={2022},
+  organization={Fontys}
+}
+
+
+
+
+@conference{gopalak2022analysisofcurvature,
+  title = {Analysis of curvature approximations via covariant curl and incompatibility for Regge metrics},
+  author = {Gopalakrishnan, Jay and Neunteufel, Michael and Sch{\"o}berl, Joachim and Wardetzky, Max},
+  year = {2022},
+  month = {jun},
+  url={https://www.mfo.de/occasion/2225/www_view},
+  address = {Oberwolfach, Germany},
+  booktitle = {Oberwolfach: Hilbert Complexes: Analysis, Applications, and Discretizations},
+}
+
+@conference{neunteu2021mixedfinitelement,
+  title = {Mixed Finite Element Methods for Nonlinear Elasticity and Shells},
+  author = {Neunteufel, Michael and Pechstein, Astrid and Sch{\"o}berl, Joachim},
+  year = {2021},
+  month={jan},
+  url = {https://www.mfo.de/occasion/2102/www_view},
+  address = {Oberwolfach, Germany},
+  booktitle = {Oberwolfach: Workshop on Nonstandard Finite Element Methods},
 }
