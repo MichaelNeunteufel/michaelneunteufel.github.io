@@ -3,7 +3,7 @@ title: "Novel H(symCurl)-conforming finite elements for the relaxed micromorphic
 authors: 'Sky, Neunteufel, Lewintan, Zilian, Neff'
 collection: publications
 category: manuscripts
-permalink: /publication/2024-SNLZN-Novel-H(sy
+permalink: /publication/2024-SNLZN-Novel-Hsy
 date: 2024-01-01
 venue: 'Computer Methods in Applied Mechanics and Engineering'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0045782523006187'
