@@ -12,3 +12,5 @@ Gemfile.lock
 node_modules
 package-lock.json
 vendor/
+.DS_Store
+for_me_read
