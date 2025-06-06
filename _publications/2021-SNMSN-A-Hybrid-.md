@@ -3,7 +3,7 @@ title: "A Hybrid $$ H ^1$$x$$ H ( {curl})$$ Finite Element Formulation for a Rel
 authors: 'Sky, Neunteufel, M&uuml;nch, Sch&ouml;berl, Neff'
 collection: publications
 category: manuscripts
-permalink: /publication/2021-SNMSN-A-Hybrid-$
+permalink: /publication/2021-SNMSN-A-Hybrid-
 date: 2021-07-01
 venue: 'Computational Mechanics'
 paperurl: 'https://doi.org/10.1007/s00466-021-02002-8'

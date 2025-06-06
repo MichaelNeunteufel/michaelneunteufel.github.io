@@ -3,7 +3,7 @@ title: "Novel $$H^{dev}(Curl{})$$-Conforming Elements on Regular Triangulations 
 authors: 'Sky, Neunteufel, Lewintan, Gourgiotis, Zilian, Neff'
 collection: publications
 category: manuscripts
-permalink: /publication/2025-SNLGZN-Novel-$Hte
+permalink: /publication/2025-SNLGZN-Novel-Htex
 date: 2025-02-01
 venue: 'Computational Mechanics'
 paperurl: 'https://doi.org/10.1007/s00466-025-02609-1'

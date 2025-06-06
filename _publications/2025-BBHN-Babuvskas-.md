@@ -3,7 +3,7 @@ title: "Babu&scaron;ka&apos;s paradox in a nonlinear bending model"
 authors: 'Bartels, Bonito, Hornung, Neunteufel'
 collection: publications
 category: preprints
-permalink: /publication/2025-BBHN-Babuvska's
+permalink: /publication/2025-BBHN-Babuvskas-
 date: 2025-01-01
 venue: '2503.17190'
 arxivurl: 'https://arxiv.org/abs/2503.17190'

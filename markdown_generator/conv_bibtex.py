@@ -109,7 +109,7 @@ for i, bib_id in enumerate(bibdata.entries):
     pub_date = str(b["year"]) + "-" + pub_month + "-" + pub_day
 
     #strip out {} as needed (some bibtex entries that maintain formatting)
-    clean_title = b["title"].replace("{", "").replace("}","").replace("\\","").replace(" ","-")  
+    clean_title = b["title"].replace("{", "").replace("}","").replace("\\","").replace(" ","-").replace("(","").replace(")","").replace("$","").replace("'","")
     #print(clean_title)
     md_filename = str(b["year"])+"-"
     authors = ""
@@ -189,8 +189,11 @@ for i, bib_id in enumerate(bibdata.entries):
     if abstract:
         abstract = abstract.replace("\\$", "$$").replace("{\\textbackslash}", "\\").replace("\\_", "_").replace("\\{", "{").replace("\\}", "}").replace("{\\textasciicircum}", "^").replace(" .", ".")
         abstract = html_escape(abstract)
-        abstract = abstract.replace("{\\&apos;e}","&eacute;").replace("{\\&quot;o}", "&ouml;").replace("\\&quot;o", "&ouml;").replace("\\&amp;", "&amp;").replace("\\v{s}","&scaron;")
+        abstract = abstract.replace("{\\&apos;e}","&eacute;").replace("{\\&quot;o}", "&ouml;").replace("\\&quot;o", "&ouml;").replace("{\\&quot;a}", "&auml;").replace("{\\&quot;u}", "&uuml;").replace("\\&amp;", "&amp;").replace("\\v{s}","&scaron;").replace("{\\ss}","&szlig;")
         md += abstract
+
+    if "code" in b.keys():
+        md += "\n\n[Supplementary code]("+ b["code"] + ")"
     # md += "\ncitation: '" + html_escape(citation) + "'"
 
     # md += "\n---"
