@@ -15,7 +15,7 @@ For anisotropic physical structures, shear locking can be observed in the finite
 
 
 <center>
-<img width="50%" src='/images/portfolio/tdnns_cylshell.png'>
+<img width="35%" src='/images/portfolio/tdnns_cylshell.png'>
 </center>
 
 

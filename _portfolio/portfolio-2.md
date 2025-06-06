@@ -50,7 +50,7 @@ Displacement error with respect to the number of elements of a shell for differe
  </tr>
 </table>
 
-Recently, we investigated the Babu&scaron;ka or plate paradox, where convergence fails when a domain with curved boundary is approximated by polygonal domains in linear bending problems with simple support boundary conditions. We showed that the paradox also occurs for a nonlinear bending-folding model which enforces vanishing Gaussian curvature, and it can be cured by cutting the interface edges [[2025](https://michaelneunteufel.github.io/publication/2025-BBHN-Babuvska's)]. 
+Recently, we investigated the Babu&scaron;ka or plate paradox, where convergence fails when a domain with curved boundary is approximated by polygonal domains in linear bending problems with simple support boundary conditions. We showed that the paradox also occurs for a nonlinear bending-folding model which enforces vanishing Gaussian curvature, and it can be cured by cutting the interface edges [[2025](https://michaelneunteufel.github.io/publication/2025-BBHN-Babuvskas-)]. 
 
 <table style="border-collapse: collapse; border: none;">
 <tr style="border: none;">
