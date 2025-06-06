@@ -162,6 +162,7 @@
   urldate = {2024-10-04},
   abstract = {In this paper we extend the recently introduced mixed Hellan--Herrmann--Johnson (HHJ) method for nonlinear Koiter shells to nonlinear Naghdi shells by means of a hierarchical approach. The additional shearing degrees of freedom are discretized by H(curl)-conforming N{\'e}d{\'e}lec finite elements entailing a shear locking free method. By linearizing the models we obtain in the small strain regime linear Kirchhoff--Love and Reissner--Mindlin shell formulations, which reduce for plates to the originally proposed HHJ and TDNNS methods for Kirchhoff--Love and Reissner--Mindlin plates, respectively. By interpolating the membrane strains into the so-called Regge finite element space we obtain locking-free arbitrary order shell methods. Additionally, the methods can be directly applied to structures with kinks and branched shells. Several numerical examples and experiments are performed validating the excellent performance of the proposed shell elements.},
   keywords = {elasticity,HHJ,locking,Regge,shells,TDNNS},
+  code = {https://github.com/MichaelNeunteufel/hhj_tdnns_nonlinear_shells},
   arxivurl = {https://arxiv.org/abs/2304.13806},
 }
 
@@ -405,6 +406,8 @@ arxivurl = {https://arxiv.org/abs/2308.07750},
   collaborator = {Sch{\"o}berl, Joachim},
   langid = {german},
   school = {TU Wien},
+  abstract = {Im ersten Kapitel werden grundlegende Ergebnisse der Elastizit{\"a}tstheorie behandelt, sowie erste Variationsformulierungen hergeleitet. Au{\ss}erdem werden mit Unterst{\"u}tzung von numerischen Experimenten die Unterschiede zwischen linearer und nichtlinearer Elastizit{\"a}t erl{\"a}utert. Das zweite Kapitel f{\"u}hrt in die Theorie der Schalen, also Strukturen mit d{\"u}nnen W{\"a}nden, ein. Es werden eine geometrische Herleitung eines nichtlinearen Schalenmodells skizziert und geeignete Stetigkeitsanforderungen besprochen. Im darauﬀolgenden Abschnitt werden einige Plattenmodelle besprochen und geeignete Finite-Elemente-R{\"a}ume, sowie eine Methode zum L&ouml;sen von gemischten Problemen vorgestellt. Im letzten Kapitel werden mit Hilfe der in den vorherigen Abschnitten bereitgestellten Methoden eine Variationsformulierung f{\"u}r schubstarre und schubweiche, nichtlineare Schalenmodelle hergeleitet und numerische Beispiele vorgestellt. F{\"u}r alle numerischen Experimente wurde das Programm NGSolve (www.ngsolve.org) zusammen mit der Skriptsprache Python verwendet.},
+  url={http://michaelneunteufel.github.io/files/bachelor_thesis.pdf},
 }
 
 @misc{bartels2025babuvskasparadoxnonlinearbending,
@@ -418,15 +421,20 @@ arxivurl = {https://arxiv.org/abs/2308.07750},
       abstract = {The Babu\v{s}ka or plate paradox concerns the failure of convergence when a domain with curved boundary is approximated by polygonal domains in linear bending problems with simple support boundary conditions. It can be explained via a boundary integral representation of the total Gaussian curvature that is part of the Kirchhoff--Love bending energy. It is shown that the paradox also occurs for a nonlinear bending-folding model which enforces vanishing Gaussian curvature. A simple remedy that is compatible with simplicial finite element methods to avoid wrong convergence is devised.}
 }
 
-@misc{fu2025fourfieldmixedformulationincompressible,
+@article{fu2025fourfieldmixedformulationincompressible,
       title={A four-field mixed formulation for incompressible finite elasticity}, 
       author={Guosheng Fu and Michael Neunteufel and Joachim Sch{\"o}berl and Adam Zdunek},
       year={2025},
-      eprint={2503.00989},
-      archivePrefix={arXiv},
-      primaryClass={math.NA},
-      url={https://arxiv.org/abs/2503.00989}, 
-      abstract={In this work, we generalize the mass-conserving mixed stress (MCS) finite element method for Stokes equations [Gopalakrishnan J., Lederer P., and Sch{\"o}berl J., A mass conserving mixed stress formulation for the Stokes equations, IMA Journal of Numerical Analysis 40(3), 1838-1874 (2019)], involving normal velocity and tangential-normal stress continuous fields, to incompressible finite elasticity. By means of the three-field Hu-Washizu principle, introducing the displacement gradient and 1st Piola-Kirchhoff stress tensor as additional fields, we circumvent the inversion of the constitutive law. We lift the arising distributional derivatives of the displacement gradient to a regular auxiliary displacement gradient field. Static condensation can be applied at the element level, providing a global pure displacement problem to be solved. We present a stabilization motivated by Hybrid Discontinuous Galerkin methods. A solving algorithm is discussed, which asserts the solvability of the arising linearized subproblems for problems with physically positive eigenvalues. The excellent performance of the proposed method is corroborated by several numerical experiments.}
+      month = sep,
+      journal = {Computer Methods in Applied Mechanics and Engineering},
+      volume = {444},
+      pages = {118082},
+      issn = {0045-7825},
+      doi = {10.1016/j.cma.2025.118082},
+      urldate = {2025-05-31},
+      abstract={In this work, we generalize the mass-conserving mixed stress (MCS) finite element method for Stokes equations [Gopalakrishnan J., Lederer P., and Sch{\"o}berl J., A mass conserving mixed stress formulation for the Stokes equations, IMA Journal of Numerical Analysis 40(3), 1838-1874 (2019)], involving normal velocity and tangential-normal stress continuous fields, to incompressible finite elasticity. By means of the three-field Hu-Washizu principle, introducing the displacement gradient and 1st Piola-Kirchhoff stress tensor as additional fields, we circumvent the inversion of the constitutive law. We lift the arising distributional derivatives of the displacement gradient to a regular auxiliary displacement gradient field. Static condensation can be applied at the element level, providing a global pure displacement problem to be solved. We present a stabilization motivated by Hybrid Discontinuous Galerkin methods. A solving algorithm is discussed, which asserts the solvability of the arising linearized subproblems for problems with physically positive eigenvalues. The excellent performance of the proposed method is corroborated by several numerical experiments.},
+      code = {https://doi.org/10.5281/zenodo.14927329},
+      arxivurl={https://arxiv.org/abs/2503.00989}, 
 }
 
 @inproceedings{Sky2024schubversteifungsfreie,
@@ -473,4 +481,20 @@ arxivurl = {https://arxiv.org/abs/2308.07750},
   url = {https://www.mfo.de/occasion/2102/www_view},
   address = {Oberwolfach, Germany},
   booktitle = {Oberwolfach: Workshop on Nonstandard Finite Element Methods},
+}
+
+@misc{gopalakrishnanGuidedModesHelical2025,
+  title = {Guided Modes of Helical Waveguides},
+  author = {Gopalakrishnan, Jay and Neunteufel, Michael},
+  year = {2025},
+  month = jun,
+  number = {arXiv:2506.03276},
+  eprint = {2506.03276},
+  primaryclass = {physics},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2506.03276},
+  urldate = {2025-06-06},
+  abstract = {This paper studies guided transverse scalar modes propagating through helically coiled waveguides. Modeling the modes as solutions of the Helmholtz equation within the three-dimensional (3D) waveguide geometry, a propagation ansatz transforms the mode-finding problem into a 3D quadratic eigenproblem. Through an untwisting map, the problem is shown to be equivalent to a 3D quadratic eigenproblem on a straightened configuration. Next, exploiting the constant torsion and curvature of the Frenet frame of a circular helix, the 3D eigenproblem is further reduced to a two-dimensional (2D) eigenproblem on the waveguide cross section. All three eigenproblems are numerically treated. As expected, significant computational savings are realized in the 2D model. A few nontrivial numerical techniques are needed to make the computation of modes within the 3D geometry feasible. They are presented along with a procedure to effectively filter out unwanted non-propagating eigenfunctions. Computational results show that the geometric effect of coiling is to shift the localization of guided modes away from the coiling center. The variations in modes as coiling pitch is changed are reported considering the example of a coiled optical fiber.},
+  archiveprefix = {arXiv},
+  keywords = {fiber},
 }
