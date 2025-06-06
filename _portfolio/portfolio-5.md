@@ -9,7 +9,15 @@ Lagrangian-Eulerian (ALE) methods, where the fluid velocity gets discretized by 
 
 <center>
 <img width="50%" src='/images/portfolio/fsi_2.png'>
+
+
+<video width="650" height="250" controls>
+  <source src="/images/portfolio/fsihdiv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 </center>
+
+
 
 For anisotropic physical structures, shear locking can be observed in the finite element discretization of (nonlinear) elasticity. The tangential displacement and normal-normal-stress continuous (TDNNS) method has elegantly circumvented this behaviour in linear elasticity. Besides the displacement, the stress tensor is introduced as an additional variable. The stress and displacement fields are discretized by matrix- and vector-valued finite elements, where only specific components are continuous. Extending this mixed method to the finite strain regime turned out to be challenging as, on the one hand, this two-field formulation would require inverting the nonlinear stress-strain relation, and on the other hand, the displacement's weak regularity leads to a distributional gradient, which cannot be multiplied in general. We were able to solve this problem in terms of a three-field Hu–Washizu formulation by computing a discrete $$L^2$$ Riesz representative of the distributional deformation gradient as a third field [[2021](https://michaelneunteufel.github.io/publication/2021-N-Mixed-Fini), [2021](https://michaelneunteufel.github.io/publication/2021-NPS-Three-Fiel)]. The resulting method extends the robustness property concerning shear locking to the nonlinear regime.
 
