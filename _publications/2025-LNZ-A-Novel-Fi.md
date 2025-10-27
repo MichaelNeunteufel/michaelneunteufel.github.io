@@ -4,8 +4,9 @@ authors: 'Li, Neunteufel, Zhu'
 collection: publications
 category: manuscripts
 permalink: /publication/2025-LNZ-A-Novel-Fi
-date: 2025-09-01
-venue: 'Journal of Computational Physics (accepted)'
+date: 2025-12-01
+venue: 'Journal of Computational Physics'
+paperurl: 'https://doi.org/10.1016/j.jcp.2025.114372'
 bibtexurl: 'http://michaelneunteufel.github.io/files/bibtex/liNovelFiniteElement2025.bib'
 arxivurl: 'https://arxiv.org/abs/2507.17928'
 ---
