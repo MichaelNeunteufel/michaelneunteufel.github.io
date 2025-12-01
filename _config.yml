@@ -26,10 +26,10 @@ author:
   name             : "Dr. Michael Neunteufel"
   pronouns         : # example: "she/her"  
   bio              : #"Short biography for the left-hand sidebar"
-  location         : "Portland, Oregon, USA"
-  employer         : "Portland State University"
+  location         : "Vienna, Austria"
+  employer         : "TU Wien"
   uri              : # URL
-  email            : "mneunteu@pdx.edu" 
+  email            : "michael.neunteufel@tuwien.ac.at" 
 
   # Academic websites
   arxiv            : "https://arxiv.org/search/?searchtype=author&query=Neunteufel%2C+M"
