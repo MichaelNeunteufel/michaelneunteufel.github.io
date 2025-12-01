@@ -10,7 +10,7 @@
       "postalCode": "",
       "city": "Vienna",
       "countryCode": "Austria",
-      "region": ""
+      // "region": ""
     },
     "profiles": [
       {
