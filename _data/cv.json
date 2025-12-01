@@ -1,16 +1,16 @@
 {
   "basics": {
     "name": "Dr. Michael Neunteufel",
-    "email": "mneunteu@pdx.edu",
+    "email": "michael.neunteufel@tuwien.ac.at",
     // "phone": "",
     "website": "https://michaelneunteufel.github.io",
     // "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
-      "address": "Portland State University",
+      "address": "TU Wien",
       "postalCode": "",
-      "city": "Portland",
-      "countryCode": "USA",
-      "region": "Oregon"
+      "city": "Vienna",
+      "countryCode": "Austria",
+      "region": ""
     },
     "profiles": [
       {
@@ -42,10 +42,16 @@
   },
   "work": [
     {
+      "company": "TU Wien (Austria)",
+      "position": "Postdoctoral researcher",
+      "startDate": "2025-12",
+      "endDate": "present"
+    },
+    {
       "company": "Portland State University (OR, USA)",
       "position": "Postdoctoral researcher",
       "startDate": "2024-02",
-      "endDate": "present"
+      "endDate": "2025-11"
     },
     {
       "company": "TU Wien (Austria)",
