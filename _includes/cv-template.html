@@ -37,8 +37,25 @@
     {% if cv.basics.profiles.size > 0 %}
     <div class="cv-profiles">
       {% for profile in cv.basics.profiles %}
+      {% assign network = profile.network | downcase %}
       <a href="{{ profile.url }}" target="_blank" class="cv-profile-link">
-        <i class="fab fa-{{ profile.network | downcase }}"></i> {{ profile.network }}
+        {% case network %}
+        {% when "google scholar" %}
+        <i class="ai ai-google-scholar"></i>
+        {% when "arxiv" %}
+        <i class="ai ai-arxiv"></i>
+        {% when "orcid" %}
+        <i class="ai ai-orcid"></i>
+        {% when "researchgate" %}
+        <i class="ai ai-researchgate"></i>
+        {% when "github" %}
+        <i class="fab fa-github"></i>
+        {% when "mathscinet" %}
+        <i class="fas fa-square-root-alt"></i>
+        {% else %}
+        <i class="fas fa-link"></i>
+        {% endcase %}
+        {{ profile.network }}
       </a>
       {% endfor %}
     </div>
