@@ -1,7 +1,7 @@
 ---
 title: "Finite Elements for Differential Geometry"
 collection: teaching
-type: "Seminar"
+type: "Lecture with exercise class"
 permalink: /teaching/2026-FEDiffGeo
 venue: "TU Wien"
 date: 2026-03-01
