@@ -1,5 +1,5 @@
 ---
-title: "A Hybrid $$ H ^1$$x$$ H ( {curl})$$ Finite Element Formulation for a Relaxed Micromorphic Continuum Model of Antiplane Shear"
+title: "A Hybrid \\\\(H^1 \\times H(\\operatorname{curl})\\\\) Finite Element Formulation for a Relaxed Micromorphic Continuum Model of Antiplane Shear"
 authors: 'Sky, Neunteufel, M&uuml;nch, Sch&ouml;berl, Neff'
 collection: publications
 category: manuscripts

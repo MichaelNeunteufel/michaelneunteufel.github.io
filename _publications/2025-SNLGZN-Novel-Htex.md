@@ -1,5 +1,5 @@
 ---
-title: "Novel $$H^{dev}(Curl{})$$-Conforming Elements on Regular Triangulations and Clough--Tocher Splits for the Planar Relaxed Micromorphic Model"
+title: "Novel \\\\(H^{\\operatorname{dev}}(\\operatorname{Curl})\\\\)-Conforming Elements on Regular Triangulations and Clough--Tocher Splits for the Planar Relaxed Micromorphic Model"
 authors: 'Sky, Neunteufel, Lewintan, Gourgiotis, Zilian, Neff'
 collection: publications
 category: manuscripts
