@@ -8,7 +8,7 @@ date: 2026-07-21
 location: "Munich, Germany"
 ---
 
-Upcoming: The slides will be provided soon.
+The slides can be found [here](http://michaelneunteufel.github.io/files/talks/2026_presentation_wccm_eccomas_neunteufel.pdf).
 
 <h2>Abstract:</h2>
 In continuum mechanics, locking effects may arise when anisotropic elements are used to discretize thin-walled structures (shear locking) or when simulating nearly incompressible materials such as rubber (volumetric locking). In the small-strain regime, mixed two-field finite element formulations that introduce the stress tensor as an additional unknown have been successfully developed to alleviate locking. The tangential-displacement normal-normal-stress (TDNNS) method [1] was proven to be robust with respect to anisotropic structures and, when combined with a stabilization term, also with respect to volumetric locking. The mass-conserving mixed stress (MCS) method [2], frequently used for the (Navier-)Stokes equations, is robust in the incompressible limit. A key ingredient of both approaches is the use of displacement and stress finite elements with reduced inter-element continuity compared to nodal finite elements. The reduced regularity, however, poses severe challenges for extending these methods to the nonlinear regime, as gradients must be interpreted in the sense of distributions.
