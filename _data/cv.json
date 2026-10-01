@@ -1,16 +1,13 @@
 {
   "basics": {
     "name": "Dr. Michael Neunteufel",
-    "email": "michael.neunteufel@tuwien.ac.at",
-    // "phone": "",
+    "email": "michael.neunteufel@ricam.oeaw.ac.at",
     "website": "https://michaelneunteufel.github.io",
-    // "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
-      "address": "TU Wien",
+      "address": "RICAM, Austrian Academy of Sciences",
       "postalCode": "",
-      "city": "Vienna",
-      "countryCode": "Austria",
-      // "region": ""
+      "city": "Linz",
+      "countryCode": "Austria"
     },
     "profiles": [
       {
@@ -47,10 +44,17 @@
   },
   "work": [
     {
+      "company": "RICAM, Austrian Academy of Sciences (Linz, Austria)",
+      "position": "Postdoctoral researcher",
+      "startDate": "2026-10",
+      "endDate": "present",
+      "summary": "Computational Methods for PDEs"
+    },
+    {
       "company": "TU Wien (Austria)",
       "position": "Postdoctoral researcher",
       "startDate": "2025-12",
-      "endDate": "present"
+      "endDate": "2026-09"
     },
     {
       "company": "Portland State University (OR, USA)",
@@ -112,8 +116,8 @@
   ],
   "grants": [
     {
-      "date": 2024,
-      "grant": "FWF Erwin Schrödinger Fellowship <a href='https://www.fwf.ac.at/en/research-radar/10.55776/J4824'>10.55776/J4824</a>"
+      "date": "2024–2026",
+      "grant": "FWF Erwin Schrödinger Fellowship <a href='https://www.fwf.ac.at/en/research-radar/10.55776/J4824'>10.55776/J4824</a> (past funding)"
     }
   ],
   "skills": [],
@@ -138,11 +142,3 @@
   "teaching": [],
   "portfolio": []
 }
-
-//  {
-//       "name": "Portfolio item number 1",
-//       "category": "portfolio",
-//       "date": "",
-//       "url": "",
-//       "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-//     }

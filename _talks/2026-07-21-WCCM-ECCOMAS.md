@@ -1,7 +1,7 @@
 ---
 title: "Locking-free mixed finite element methods for thin-walled and nearly incompressible nonlinear continuum mechanics"
 collection: talks
-type: "Talk"
+type: "Minisymposium keynote"
 permalink: /talks/2026-07-21-WCCM-ECCOMAS
 venue: "WCCM-ECCOMAS 2026"
 date: 2026-07-21

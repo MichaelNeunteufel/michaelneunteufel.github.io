@@ -25,6 +25,16 @@ def parse_markdown_cv(md_file):
     with open(md_file, 'r', encoding='utf-8') as file:
         content = file.read()
     
+    # A redirect has no CV content; preserve the maintained JSON CV.
+    front_matter = re.match(r'^---\s*\n(.*?)\n---', content, flags=re.DOTALL)
+    if front_matter:
+        metadata = yaml.safe_load(front_matter.group(1)) or {}
+        if metadata.get('redirect_to'):
+            raise ValueError(
+                "The Markdown CV is a redirect. Update _data/cv.json directly; "
+                "conversion would overwrite the maintained short CV."
+            )
+
     # Remove YAML front matter
     content = re.sub(r'^---.*?---\s*', '', content, flags=re.DOTALL)
     
